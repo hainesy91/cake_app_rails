@@ -1,0 +1,13 @@
+<h1>This is the Welcome Page</h1>
+<div class="list-group">
+  <% @cake.each do |cake| %>
+    <h2><%= cake.name %></h2>
+    <div class="list-group-item">
+      <ul class="cake">
+        <li><%= link_to(cake.name, cake_path(cake.id)) %></li>
+        <li><%= link_to('DELETE', cake_path(cake.id), method: :delete)%></li>
+        <li><%= link_to('EDIT', edit_cake_path(cake.id)) %></li>
+      </ul>
+    </div>
+  <% end %>
+</div>

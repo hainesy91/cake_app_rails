@@ -1,0 +1,16 @@
+
+<%= form_for @cake do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :flavour %>
+  <%= f.text_field :flavour %>
+
+  <%= f.label :origin %>
+  <%= f.text_field :origin %>
+
+  <%= f.label :image %>
+  <%= f.text_field :image %>
+
+  <%= f.submit 'Edit Cake!' %>
+<% end %>
