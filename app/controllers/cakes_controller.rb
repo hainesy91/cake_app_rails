@@ -33,11 +33,10 @@ class CakesController < ApplicationController
     redirect_to(cakes_path)
   end
 
-
   private
 
   def cake_params
-    params.require(:cake).permit(:name, :flavour, :origin, :img)
+    params.require(:cake).permit(:name, :flavour, :origin, :image)
   end
 
 

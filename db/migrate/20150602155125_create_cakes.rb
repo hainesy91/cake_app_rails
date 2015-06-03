@@ -4,6 +4,7 @@ class CreateCakes < ActiveRecord::Migration
       t.string :name
       t.string :flavour
       t.string :origin
+      t.text :image
 
       t.timestamps null: false
     end

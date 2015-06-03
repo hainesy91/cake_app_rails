@@ -20,9 +20,9 @@ ActiveRecord::Schema.define(version: 20150602163332) do
     t.string   "name"
     t.string   "flavour"
     t.string   "origin"
+    t.string   "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string   "image"
   end
 
 end
